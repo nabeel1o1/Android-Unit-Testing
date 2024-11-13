@@ -19,12 +19,13 @@ class ParameterizedExample(val input: String, val expectedValue: Boolean) {
 
         @JvmStatic
         @Parameterized.Parameters(name = "{index} : {0} is pallindrome - {1}")
-        fun data() : List<Array<Any>> {
+        fun data(): List<Array<Any>> {
             return listOf(
                 arrayOf("hello", false),
                 arrayOf("level", true),
                 arrayOf("a", true),
-                arrayOf("", true))
+                arrayOf("", true)
+            )
         }
     }
 }
